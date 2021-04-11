@@ -1,9 +1,13 @@
 #!/bin/bash
 
-# script to init all files for a mapreduce job | $1 is the folder of the mapreduce job
+usage()
+{
+	echo "Usage: init_job.sh <name of the job>"
+	exit 1
+}
+
 if [ $# -eq 0 ]; then
-    echo "No job name provided"
-    exit 1
+    usage
 fi
 
 mkdir $1
