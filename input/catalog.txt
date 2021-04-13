@@ -1,0 +1,5 @@
+banana fruit 1
+apple fruit 1.2
+desk furniture 420
+TV electronics 500
+iPad electronics 120
