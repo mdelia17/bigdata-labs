@@ -10,6 +10,8 @@ if [ $# -eq 0 ]; then
     usage
 fi
 
+$HADOOP_HOME/bin/hdfs dfs -put bigdata/$1/$2 input
+
 $HADOOP_HOME/bin/hadoop jar $HADOOP_HOME/streaming/hadoop-streaming-3.2.2.jar -mapper ~/bigdata/$1/mapper.py -reducer ~/bigdata/$1/reducer.py -input /user/marco/input/$2 -output /user/marco/output/$1
 
 
