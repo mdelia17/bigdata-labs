@@ -4,6 +4,7 @@ Repository contenente il codice delle esercitazioni relative al corso di [BigDat
 - Hadoop (3.2.2)
 - MapReduce
 - Apache Hive (2.3.8)
+- Spark (3.1.1)
 
 ## Accesso al repository 
 
