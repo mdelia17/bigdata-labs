@@ -11,6 +11,6 @@ echo 'creating HDFS directories required to Hive...'
 $HADOOP_HOME/bin/hdfs dfs -mkdir /tmp
 $HADOOP_HOME/bin/hdfs dfs -mkdir /user/hive
 $HADOOP_HOME/bin/hdfs dfs -mkdir /user/hive/warehouse
-$HADOOP_HOME/bin/hdfs dfs -chmod /tmp
-$HADOOP_HOME/bin/hdfs dfs -chmod /user/hive/warehouse
+$HADOOP_HOME/bin/hdfs dfs -chmod g+w /tmp
+$HADOOP_HOME/bin/hdfs dfs -chmod g+w /user/hive/warehouse
 
