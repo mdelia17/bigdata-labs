@@ -30,4 +30,4 @@ if ! [ -f "$1/spark.py" ]; then
 	missing_spark
 fi
 
-$SPARK_HOME/bin/spark-submit --master local ~/bigdata/$1/spark.py --input_path file:///home/marco/bigdata/$1/$2 --output_path file:///home/marco/bigdata/$1/output
+$SPARK_HOME/bin/spark-submit --master local ./$1/spark.py --input_path file:///home/marco/bigdata/$1/$2 --output_path file:///home/marco/bigdata/$1/output
